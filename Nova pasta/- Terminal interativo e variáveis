@@ -1,0 +1,39 @@
+- Terminal interativo e variáveis type, print, len
+
+- Numeros e operações matemáticas
+
+> Mostrar somes e subtrações
+> mostrar ordem das operações ( dividi, multiplicar, somar/subtrair)
+> divisão sempre retorna um float, pra descartar a parte fracionada utilizamos //
+> operador %  serve para retornar a sobra após uma divisão
+
+Podemos elevar um número a alguma potência com o operador **
+
+
+
+---
+
+- Strings 
+- Boolean
+- listas
+- dicionarios
+- tuplas
+- sets
+- funções
+
+Command Injection
+
+Command injection é um ataque que visa executar comandos no sistema operacional do servidor, partindo de uma aplicação vulnerável. 
+
+Esse ataque é possível quando a aplicação passa dados fornecidos pelo usuário para a shell do sistema. Os comandos enviados são geralmente executados com os privilégios da aplicação. 
+
+Esse ataque é possível pela falta de validação de inputs.
+
+
+
+
+https://azeria-labs.com/writing-arm-assembly-part-1/
+https://gist.github.com/shawarkhanethicalhacker/996a4bc19d2d06f6bbac5d614ce65c66
+https://curl.haxx.se/docs/http-cookies.html
+
+https://www.cybrary.it/video/webapp-part-5/

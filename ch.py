@@ -1,0 +1,11 @@
+enc = 73851709625569149303392944
+
+p = 131231564657789987221314359
+g = 483905
+A = 38289573795047443088133899
+B = 27036552164913867986554244
+
+s = 'XXXXXXXXXXXX'
+
+flag_hex = list(format(enc, 'x'))
+print("Flag: Hackaflag{" + flag_hex.decode("hex") + "}")

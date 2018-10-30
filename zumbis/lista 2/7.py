@@ -5,22 +5,21 @@ latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de
 latas de tinta a serem compradas e o preço total. Obs. : somente são vendidos 
 um número inteiro de latas."""
 
-metros_area = int(input("Área que será pintada\n"))
+metros_area = float(input("Área que será pintada\n"))
 
-litros = metros_area * 3 # para cada metro, 3 litros
-lata = litros // 18 # pegando a quantidade de latas baseada nos litros
+litros = metros_area / 3 # para cada metro, 3 litros#
 
-if lata == 0: #and litros < 18: # se a quantidade de litros for maior que zero e diferente de 18, lata recebe + 1
-	lata += 1 # isso evita que caso a quantidade de litros necessários sejam menores que 18, as latas fiquem zeradas
+if litros % 18 == 0: # se a sobra da divisão de litros por 18 for igual a 0
+	latas = litros / 18 # atribuimos a latas o valor de ltiro dividido por 18, que será nossa quantidade de latas
+else:
+	latas = int(litros/18) + 1 # se não, fazemos a mesma coisa somando 1, para os casos em que se use apenas uma lata, ou que
+	#passe de 1 lata por pouco
 
 
-preco = lata * 80
+preco = latas * 80
 
 print("Metros que serão pintados", metros_area)
 print("Litros necessários", litros)
-print("Latas necessárias", lata)
+print("Latas necessárias", latas)
 print("Preço", preco)
-# 1 lada para cada 54 metros
-# 1 litro para cada 3 metros
-# lata = 18 litros 
-# preço 80
+
